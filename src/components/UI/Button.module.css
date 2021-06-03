@@ -7,10 +7,16 @@
     color: #2c2922;
 }
 
-.button:hover,
+.button:hover:not(:disabled),
 .button:active {
     background-color: #de8971;
     border-color: #de8971;
     color: white;
     cursor: pointer;
+}
+
+.button:disabled {
+    cursor: not-allowed;
+    background-color: #c4c4c4;
+    border-color: #938e8c;
 }
