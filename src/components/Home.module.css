@@ -1,0 +1,30 @@
+.home {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.15rem;
+    text-align: center;
+}
+
+.welcome {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 5rem auto;
+}
+
+.message {
+    animation: slide-down 300ms ease-out forwards;
+}
+
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
