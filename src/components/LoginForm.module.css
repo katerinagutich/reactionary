@@ -1,7 +1,7 @@
 form {
     margin: 1.5rem;
     border-radius: 10px;
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: #a7d0cd;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
 }
@@ -40,7 +40,7 @@ form {
     background: #e5c6e1;
 }
 
-.control.invalid input {
+input.invalid {
     border-color: red;
     background: #fbdada;
 }
