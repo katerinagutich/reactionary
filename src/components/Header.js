@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux'
 
 import { authActions } from '../store/auth-slice'
+import Button from './UI/Button'
 import styles from './Header.module.css'
 
 const Header = () => {
@@ -26,7 +27,7 @@ const Header = () => {
               <a href="/">My List</a>
             </li>
             <li>
-              <button onClick={logoutHandler}>Log Out</button>
+              <Button name="Let Me Out" type="button" onClick={logoutHandler} />
             </li>
           </ul>
         </nav>
