@@ -2,7 +2,7 @@ import useInput from '../hooks/use-input'
 import styles from './LoginForm.module.css'
 import Button from './UI/Button'
 
-const LoginForm = () => {
+const LoginForm = (props) => {
   const {
     value: name,
     isValid: nameIsValid,
@@ -29,6 +29,7 @@ const LoginForm = () => {
     if (!formIsValid) return
     resetName()
     resetPassword()
+    props.onSubmit()
   }
 
   return (
