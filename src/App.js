@@ -1,27 +1,38 @@
 import { Switch, Route, Redirect } from 'react-router-dom'
 
 import Header from './components/Header'
-import Home from './components/Home'
+import Welcome from './pages/Welcome'
+import Home from './pages/Home'
 import WordList from './components/Words/WordList'
+import { useSelector } from 'react-redux'
 
 function App() {
+  const isAuth = useSelector((state) => state.authentication.isAuthenticated)
+
   return (
     <div className="App">
       <Header />
-      <Switch>
-        <Route path="/" exact>
-          <Redirect to="/reactionary" />
-        </Route>
+      {!isAuth && (
         <Route path="/reactionary" exact>
-          <Home />
+          <Welcome />
         </Route>
-        <Route path="/reactionary/word-list" exact>
-          <WordList />
-        </Route>
-        <Route path="/reactionary/word-list/:wordId">
-          <WordList />
-        </Route>
-      </Switch>
+      )}
+      <Route path="/">
+        <Redirect to="/reactionary" />
+      </Route>
+      {isAuth && (
+        <Switch>
+          <Route path="/reactionary" exact>
+            <Home />
+          </Route>
+          <Route path="/word-list" exact>
+            <WordList />
+          </Route>
+          <Route path="/word-list/:wordId">
+            <WordList />
+          </Route>
+        </Switch>
+      )}
     </div>
   )
 }
