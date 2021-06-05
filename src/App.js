@@ -5,6 +5,7 @@ import Welcome from './pages/Welcome'
 import Home from './pages/Home'
 import WordList from './components/Words/WordList'
 import { useSelector } from 'react-redux'
+import WordItem from './components/Words/WordItem'
 
 function App() {
   const isAuth = useSelector((state) => state.authentication.isAuthenticated)
@@ -17,7 +18,7 @@ function App() {
           <Welcome />
         </Route>
       )}
-      <Route path="/">
+      <Route path="/" exact>
         <Redirect to="/reactionary" />
       </Route>
       {isAuth && (
@@ -29,7 +30,7 @@ function App() {
             <WordList />
           </Route>
           <Route path="/word-list/:wordId">
-            <WordList />
+            <WordItem />
           </Route>
         </Switch>
       )}
