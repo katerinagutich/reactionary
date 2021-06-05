@@ -41,5 +41,8 @@
   "prettier": {
     "semi": false,
     "singleQuote": true
+  },
+  "devDependencies": {
+    "prettier": "^2.3.1"
   }
 }
