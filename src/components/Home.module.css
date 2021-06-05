@@ -19,6 +19,11 @@
     animation: slide-down 300ms ease-out forwards;
 }
 
+.button {
+    width: 30%;
+    margin: auto;
+}
+
 @keyframes slide-down {
     from {
         opacity: 0;
