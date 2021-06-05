@@ -36,6 +36,8 @@
 }
 
 .header nav a:hover,
-.header nav a:active {
+.header nav a:active,
+.active {
     border-bottom: 3px solid #de8971;
+    color: #ffe9d6;
 }

@@ -1,4 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux'
+import { Link, NavLink } from 'react-router-dom'
 
 import { authActions } from '../store/auth-slice'
 import Button from './UI/Button'
@@ -14,17 +15,21 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <a href="/" className={styles.logo}>
+      <Link to="/reactionary" className={styles.logo}>
         Reactionary
-      </a>
+      </Link>
       {isAuth && (
         <nav>
           <ul>
             <li>
-              <a href="/">Main Page</a>
+              <NavLink to="/reactionary" activeClassName={styles.active}>
+                Main Page
+              </NavLink>
             </li>
             <li>
-              <a href="/">My List</a>
+              <NavLink to="/word-list" activeClassName={styles.active}>
+                My List
+              </NavLink>
             </li>
             <li>
               <Button name="Let Me Out" type="button" onClick={logoutHandler} />
