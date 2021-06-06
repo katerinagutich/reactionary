@@ -1,6 +1,7 @@
 import styles from './WordItem.module.css'
 import owl from '../../assets/owl_word_item.png'
 import Card from '../UI/Card'
+import Button from '../UI/Button'
 
 const word = {
   word: 'dictionary',
@@ -17,7 +18,10 @@ const WordItem = () => {
         <div className={styles.transcription}>{word.transcription}</div>
       </section>
       <div className={styles['definition-section']}>
-        <Card className={styles.definition}>{word.definition}</Card>
+        <Card className={styles.definition}>
+          <div>{word.definition}</div>
+          <Button name="See examples" />
+        </Card>
         <picture>
           <source srcSet={owl} media="(min-width: 769px)" />
           <img
