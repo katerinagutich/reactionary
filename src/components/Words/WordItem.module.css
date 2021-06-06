@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap');
 
 .wrapper {
-    width: 40%;
+    width: 50%;
     margin: 6rem auto;
 }
 
@@ -24,9 +24,17 @@
     justify-content: space-between;
 }
 
+picture {
+    display: block;
+    min-width: 250px;
+}
+
 .definition {
     font-size: 1.2rem;
     margin-right: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .transcription {
