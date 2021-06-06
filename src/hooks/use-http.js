@@ -27,6 +27,7 @@ const httpReducer = (state, action) => {
 
 const useHttp = (requestFunction) => {
   const [httpState, dispatch] = useReducer(httpReducer, {
+    status: 'pending',
     data: null,
     error: null,
   })
