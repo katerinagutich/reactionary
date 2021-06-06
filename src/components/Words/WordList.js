@@ -1,6 +1,6 @@
-import Card from '../UI/Card'
+import { Link } from 'react-router-dom'
+
 import styles from './WordList.module.css'
-import Button from '../UI/Button'
 
 const WordList = () => {
   const wordList = [
@@ -32,10 +32,12 @@ const WordList = () => {
   return (
     <div className={styles.list}>
       {wordList.map((item) => (
-        <section className={styles.item}>
+        <section key={item.word} className={styles.item}>
           <div className={styles.word}>{item.word}</div>
           <div className={styles.transcription}>{item.transcription}</div>
-          <Button name="Learn more" />
+          <Link className="button" to={`/word-list/${item.word}`}>
+            Learn more
+          </Link>
         </section>
       ))}
     </div>
