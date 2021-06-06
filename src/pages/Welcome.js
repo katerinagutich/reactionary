@@ -21,7 +21,7 @@ const Welcome = () => {
   }
 
   return (
-    <div className={styles.home}>
+    <div className={styles['welcome-wrapper']}>
       <div className={styles.welcome}>
         <picture>
           <source srcSet={owl} media="(min-width: 769px)" />

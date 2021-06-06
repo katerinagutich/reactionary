@@ -1,4 +1,4 @@
-.home {
+.welcome-wrapper {
     width: 40%;
     margin: auto;
     display: flex;
@@ -16,21 +16,9 @@
 
 .message {
     margin: 1.5rem;
-    animation: slide-down 300ms ease-out forwards;
 }
 
 .button {
     width: 30%;
     margin: auto;
-}
-
-@keyframes slide-down {
-    from {
-        opacity: 0;
-        transform: translateY(-3rem);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
