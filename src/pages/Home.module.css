@@ -1,0 +1,28 @@
+.home-wrapper,
+.home-word {
+    width: 45%;
+    margin: 5rem auto;
+    text-align: center;
+    display: flex;
+    font-size: 1.15rem;
+}
+
+.message {
+    align-self: flex-start;
+}
+
+.message-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.home-word {
+    width: 30%;
+    flex-direction: column;
+    row-gap: 1rem;
+    background: #a7d0cd;
+    padding: 2%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 15px;
+}
