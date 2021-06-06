@@ -5,3 +5,27 @@ body {
     margin: 0;
     padding: 0
 }
+
+.button {
+    font-size: 1.25rem;
+    background-color: #ffe9d6;
+    border: 1px solid #ffe9d6;
+    padding: 0.5rem 1.5rem;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    color: #2c2922;
+    text-decoration: none;
+}
+
+.button:hover:not(:disabled),
+.button:active {
+    background-color: #de8971;
+    border-color: #de8971;
+    color: white;
+    cursor: pointer;
+}
+
+.button:disabled {
+    cursor: not-allowed;
+    background-color: #c4c4c4;
+    border-color: #938e8c;
+}
