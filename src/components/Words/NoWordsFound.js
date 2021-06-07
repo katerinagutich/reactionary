@@ -15,7 +15,7 @@ const NoWordsFound = () => {
           alt="Friendly Owl on a page of the word you selected to learn"
         />
       </picture>
-      <Link className={`button ${styles.button}`} to={'/reactionary'}>
+      <Link className={`button ${styles.button}`} to={'/main-page'}>
         Let's get started
       </Link>
     </div>

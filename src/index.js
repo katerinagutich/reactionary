@@ -8,7 +8,7 @@ import './index.css'
 import App from './App'
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/reactionary">
     <Provider store={store}>
       <App />
     </Provider>

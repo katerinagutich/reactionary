@@ -14,16 +14,16 @@ function App() {
     <div className="App">
       <Header />
       {!isAuth && (
-        <Route path="/reactionary" exact>
+        <Route path="/main-page" exact>
           <Welcome />
         </Route>
       )}
       <Route path="/" exact>
-        <Redirect to="/reactionary" />
+        <Redirect to="/main-page" />
       </Route>
       {isAuth && (
         <Switch>
-          <Route path="/reactionary" exact>
+          <Route path="/main-page" exact>
             <Home />
           </Route>
           <Route path="/word-list" exact>

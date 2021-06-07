@@ -15,14 +15,14 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <Link to="/reactionary" className={styles.logo}>
+      <Link to="/main-page" className={styles.logo}>
         Reactionary
       </Link>
       {isAuth && (
         <nav>
           <ul>
             <li>
-              <NavLink to="/reactionary" activeClassName={styles.active}>
+              <NavLink to="/main-page" activeClassName={styles.active}>
                 Main Page
               </NavLink>
             </li>
