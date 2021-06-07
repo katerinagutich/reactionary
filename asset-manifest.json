@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7e99b5ee.chunk.css",
+    "main.js": "/static/js/main.ce23aa02.chunk.js",
+    "main.js.map": "/static/js/main.ce23aa02.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c6432648.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c6432648.js.map",
+    "static/js/2.8fb4de65.chunk.js": "/static/js/2.8fb4de65.chunk.js",
+    "static/js/2.8fb4de65.chunk.js.map": "/static/js/2.8fb4de65.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.7e99b5ee.chunk.css.map": "/static/css/main.7e99b5ee.chunk.css.map",
+    "static/js/2.8fb4de65.chunk.js.LICENSE.txt": "/static/js/2.8fb4de65.chunk.js.LICENSE.txt",
+    "static/media/owl.73525785.png": "/static/media/owl.73525785.png",
+    "static/media/owl_home.880b1760.png": "/static/media/owl_home.880b1760.png",
+    "static/media/owl_nowords.f5a73c66.png": "/static/media/owl_nowords.f5a73c66.png",
+    "static/media/owl_word_item.0b17ee52.png": "/static/media/owl_word_item.0b17ee52.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c6432648.js",
+    "static/js/2.8fb4de65.chunk.js",
+    "static/css/main.7e99b5ee.chunk.css",
+    "static/js/main.ce23aa02.chunk.js"
+  ]
+}
